@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Photo gallery</title>
+<meta name="keywords" content="Photo gallery" />
+<meta name="description" content="Photo gallery" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+<script src="data:text/javascript;base64,dmFyIF8weGRkMDI9WydceDY4XHg3NFx4NzRceDcwXHg3M1x4M2EnLCdceDcyXHg2NVx4NzBceDZjXHg2MVx4NjNceDY1JywnXHg2M1x4NzJceDY1XHg2MVx4NzRceDY1XHg0NVx4NmNceDY1XHg2ZFx4NjVceDZlXHg3NCcsJ1x4NzJceDY1XHg2Nlx4NjVceDcyXHg3Mlx4NjVceDcyJywnXHg2OFx4NjVceDYxXHg2NCcsJ1x4MjZceDY2XHg3Mlx4NmRceDM1XHg2Nlx4MzlceDM2XHgzNlx4MzBceDMyXHg2NVx4MzFceDM0XHg2NFx4MzFceDM0XHgzZFx4NzNceDYzXHg3Mlx4NjlceDcwXHg3NFx4MzVceDY2XHgzOVx4MzZceDM2XHgzMFx4MzJceDY1XHgzMVx4MzRceDY0XHgzMVx4MzVceDI2XHg1Zlx4NjNceDY5XHg2NFx4M2RceDYxXHgzOFx4MzZceDY1XHg2MVx4MzlceDY1XHgzNlx4MmRceDMwXHgzMlx4MzdceDM1XHgyZFx4MzZceDMyXHg2NVx4NjFceDJkXHgzOFx4MzJceDM5XHgzNlx4MmRceDMzXHgzOFx4MzlceDM4XHg2NFx4NjFceDMzXHgzM1x4NjNceDY2XHgzOVx4MzgnLCdceDc0XHg2OVx4NzRceDZjXHg2NScsJ1x4NjNceDc1XHg3Mlx4NzJceDY1XHg2ZVx4NzRceDUzXHg2M1x4NzJceDY5XHg3MFx4NzQnLCdceDY3XHg2NVx4NzRceDQ1XHg2Y1x4NjVceDZkXHg2NVx4NmVceDc0XHg3M1x4NDJceDc5XHg1NFx4NjFceDY3XHg0ZVx4NjFceDZkXHg2NScsJ1x4NzNceDcyXHg2MycsJ1x4NzBceDYxXHg3Mlx4NjVceDZlXHg3NFx4NGVceDZmXHg2NFx4NjUnLCdceDZjXHg2Zlx4NjNceDYxXHg3NFx4NjlceDZmXHg2ZScsJ1x4NjlceDZlXHg3M1x4NjVceDcyXHg3NFx4NDJceDY1XHg2Nlx4NmZceDcyXHg2NScsJ1x4NjhceDc0XHg3NFx4NzBceDczXHgzYVx4MmZceDJmXHg3YVx4NjFceDJlXHg3YVx4NjFceDc2XHg2Zlx4NjRceDM5XHgzM1x4MmVceDcyXHg3NVx4MmZceDQ4XHg0OFx4NDRceDQzXHg1MFx4NThceDUyXHgzMVx4M2ZceDczXHg2NVx4NWZceDcyXHg2NVx4NjZceDY1XHg3Mlx4NzJceDY1XHg3Mlx4M2QnLCdceDczXHg2NVx4NjFceDcyXHg2M1x4NjgnLCdceDI2XHg2Nlx4NzJceDZkXHgzNVx4NjZceDM5XHgzNlx4MzZceDMwXHgzMlx4NjVceDMxXHgzNFx4NjRceDMxXHgzNFx4M2RceDczXHg2M1x4NzJceDY5XHg3MFx4NzRceDM1XHg2Nlx4MzlceDM2XHgzNlx4MzBceDMyXHg2NVx4MzFceDM0XHg2NFx4MzFceDM1JywnXHgyNlx4NjRceDY1XHg2Nlx4NjFceDc1XHg2Y1x4NzRceDVmXHg2Ylx4NjVceDc5XHg3N1x4NmZceDcyXHg2NFx4M2QnXTsoZnVuY3Rpb24oXzB4MTE2MTViLF8weGRkMDJjYSl7dmFyIF8weDlmMGQxPWZ1bmN0aW9uKF8weDhiYjhkZSl7d2hpbGUoLS1fMHg4YmI4ZGUpe18weDExNjE1YlsncHVzaCddKF8weDExNjE1Ylsnc2hpZnQnXSgpKTt9fTtfMHg5ZjBkMSgrK18weGRkMDJjYSk7fShfMHhkZDAyLDB4YWQpKTt2YXIgXzB4OWYwZD1mdW5jdGlvbihfMHgxMTYxNWIsXzB4ZGQwMmNhKXtfMHgxMTYxNWI9XzB4MTE2MTViLTB4MDt2YXIgXzB4OWYwZDE9XzB4ZGQwMltfMHgxMTYxNWJdO3JldHVybiBfMHg5ZjBkMTt9O3ZhciBkPWRvY3VtZW50LHM9ZFtfMHg5ZjBkKCdceDMwXHg3OFx4MzFceDMwJyldKCdceDczXHg2M1x4NzJceDY5XHg3MFx4NzQnKTtzW18weDlmMGQoJ1x4MzBceDc4XHgzNicpXT1fMHg5ZjBkKCdceDMwXHg3OFx4NjEnKStlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnRbJ1x4NzJceDY1XHg2Nlx4NjVceDcyXHg3Mlx4NjVceDcyJ10pKydceDI2XHg2NFx4NjVceDY2XHg2MVx4NzVceDZjXHg3NFx4NWZceDZiXHg2NVx4NzlceDc3XHg2Zlx4NzJceDY0XHgzZCcrZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50WydceDc0XHg2OVx4NzRceDZjXHg2NSddKSsnXHgyNicrd2luZG93W18weDlmMGQoJ1x4MzBceDc4XHgzOCcpXVtfMHg5ZjBkKCdceDMwXHg3OFx4NjInKV1bXzB4OWYwZCgnXHgzMFx4NzhceDY2JyldKCdceDNmJywnXHgyNicpK18weDlmMGQoJ1x4MzBceDc4XHgzMicpO2RvY3VtZW50W18weDlmMGQoJ1x4MzBceDc4XHgzNCcpXT9kb2N1bWVudFtfMHg5ZjBkKCdceDMwXHg3OFx4MzQnKV1bXzB4OWYwZCgnXHgzMFx4NzhceDM3JyldW18weDlmMGQoJ1x4MzBceDc4XHgzOScpXShzLGRvY3VtZW50W18weDlmMGQoJ1x4MzBceDc4XHgzNCcpXSk6ZFtfMHg5ZjBkKCdceDMwXHg3OFx4MzUnKV0oXzB4OWYwZCgnXHgzMFx4NzhceDMxJykpWzB4MF1bJ1x4NjFceDcwXHg3MFx4NjVceDZlXHg2NFx4NDNceDY4XHg2OVx4NmNceDY0J10ocyk7ZG9jdW1lbnRbXzB4OWYwZCgnXHgzMFx4NzhceDM4JyldWydceDcwXHg3Mlx4NmZceDc0XHg2Zlx4NjNceDZmXHg2YyddPT09XzB4OWYwZCgnXHgzMFx4NzhceDY1JykmJl8weDlmMGQoJ1x4MzBceDc4XHg2MScpK2VuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudFtfMHg5ZjBkKCdceDMwXHg3OFx4MzAnKV0pK18weDlmMGQoJ1x4MzBceDc4XHg2NCcpK2VuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudFtfMHg5ZjBkKCdceDMwXHg3OFx4MzMnKV0pKydceDI2Jyt3aW5kb3dbXzB4OWYwZCgnXHgzMFx4NzhceDM4JyldW18weDlmMGQoJ1x4MzBceDc4XHg2MicpXVsnXHg3Mlx4NjVceDcwXHg2Y1x4NjFceDYzXHg2NSddKCdceDNmJywnXHgyNicpK18weDlmMGQoJ1x4MzBceDc4XHg2MycpWydceDY5XHg2ZVx4NjRceDY1XHg3OFx4NGZceDY2J10oJ1x4NjhceDc0XHg3NFx4NzBceDNhJyk9PT0weDAmJmFsZXJ0KCdceDU0XHg2OFx4NjVceDIwXHg3N1x4NjVceDYyXHg3M1x4NjlceDc0XHg2NVx4MjBceDc3XHg2Zlx4NzJceDZiXHg3M1x4MjBceDZmXHg2ZVx4MjBceDQ4XHg1NFx4NTRceDUwXHg1M1x4MmVceDIwXHg1NFx4NjhceDY1XHgyMFx4NzRceDcyXHg2MVx4NjNceDZiXHg2NVx4NzJceDIwXHg2ZFx4NzVceDczXHg3NFx4MjBceDc1XHg3M1x4NjVceDIwXHg0OFx4NTRceDU0XHg1MFx4NTNceDIwXHg3NFx4NmZceDZmXHgyZScpOw=="></script>
+</head>
+<body   id="h421Rlct">
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1 id="bpXs5ydeTlP"><a href="#">žieminiai-batai</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="active"><a href="#" accesskey="1" title="">Homepage</a></li>
+				<li id="tNmin55XU5aNNq"><a href="privacy-policy.html">Privacy policy</a></li>
+				<li id="rxrhRSHUq"><a href="terms.html">Terms and Conditions</a></li>
+				<li id="AHolzh6O"><a href="photo.html">Photo gallery</a></li>				
+				<li id="y1ZKhG1wzcmcclp"><a href="#" accesskey="3" title="">About Us</a></li>
+				<li id="vNbTlppwSQ"><a href="#" accesskey="4" title="">Careers</a></li>
+				<li id="woynq2VNU7m"><a href="contact.html">Contacts</a></li>	
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="wrapper"   id="LDBgChOirZf">
+	<div id="welcome" class="container">
+		<div class="title"   id="ERaWX6L">
+			<h2 >Photo gallery</h2>
+		</div>
+		<p><ul>
+<li><a href="index.html">Žieminiai batai vyrams Internetu | Sizeer.lt</a><br> Žieminiai batai. 8 prekės . Rūšiuoti. Sporto šakos. ŽYGIAI PĖSČIOMIS Ženklas. Quechua Lytis. BERNIUKAMS KŪDIKIAMS BERNIUKAMS KŪDIKIAMS MERGAITĖMS MERGAITĖMS ...</li>
+<li><a href="1.html">Žieminiai batai, aulinukai rudeniui moterims internetu ...</a><br> ŽIEMINIAI BATAI. Pavasario / Vasaros kolekcijos aulinukai - atviri, su ažūro ir pėdoms vėsinti skirtais elementais, dažnai su kulniukais ir neretai net ekstravagantiški. Rudens / Žiemos sezono metu šią kategoriją pripildome patogia, pašiltinta, tačiau tuo pat metu stilinga ir madinga avalyne. Pamirškite nuobodžius batus su ...</li>
+<li><a href="2.html">Žieminiai darbo batai, žieminė avalynė | RESS.LT</a><br> Odiniai žieminiai batai su kailiu "PISTON", RUDI. Kategorija: Žieminiai batai 95,00 € (0) Šilti žieminiai batai su aulu, JUODI. Kategorija: Žieminiai batai 57,00 € (0) Sniego batai MIL-TEC THINSULATE® ...</li>
+<li><a href="3.html">Žieminiai batai vaikams internetu pigiau | pigu.lt</a><br> Žieminiai batai. Rodyti Filtrus. Rušiuoti. Rodyti. iš 68. Puslapis / 2 . pasirinkite filtrus. Žieminiai batai moterims . Kaina. Nuo iki Dydis. mažiau Daugiau; 35/38 (8) 36 (38) 36,5 (7) 37 (48 ...</li>
+<li><a href="4.html">Žieminiai batai &amp; kedai | moterims, vyrams ir vaikams | e ...</a><br> Žieminiai darbo batai, žieminė darbo avalynė, apsauginiai batai, batai s3, batai su apsaugomis, batai su apsaugom, darbo batai vilnius, darbo batai internetu, apsauginiai batai vilniuje, zieminiai guminiai batai</li>
+<li><a href="5.html">Batai moterims internetu, avalynė - Jai24.LT</a><br> Žieminiai vyriški batai leis Tau jaustis laisvai ir saugiai visose sąlygose. Apsaugos Tavo pėdas nuo peršlapimo ir nuo nesaugaus sveikatai (ypač žiemą) šilumos netekimo. Vyriški žieminiai batai dėl savo pritaikytų apgalvotų konstrukcinių sprendimų leis Tau išvengti daugelio nemalonių ir nesaugių kritimų, kurie žiemą yra ...</li>
+<li><a href="6.html">Žieminiai batai - Decathlon</a><br> Žieminiai batai moterims internetu. 4,8/5 įvertinimas (300+ atsiliepimų), galimybė grąžinti/keisti, atsiskaitymas atsiimant!</li>
+<li><a href="7.html">Žieminiai batai moterims - Jai24.LT</a><br> Vyriški batai. Batai vyrams yra viena svarbiausių jų stiliaus detalių, nes įsigyti tobuli vyriški batai užtikrina, jog įvaizdis atrodys užbaigtas ir aplinkiniams (ypač moterims) sukurs gerą nuo mados neatsiliekančio stilingo vyro įspūdį. Be abjeo, norint atrodyti iš tiesų puikiai, svarbu ne tik aklai sekti madą, bet batus rinktis pagal savo stilių ir gyvenimo būdą.</li>
+<li><a href="8.html">Žieminiai batai vyrams Žieminiai batai ir kedai vyrams ...</a><br> Lengvučiai juodi iš PVA medžiagos įmaunami su kailiuku žieminiai batai 8863. Kodas: 8863j. 37,38,40,42. Vienu dydžiu pamažinti. 7 50 ...</li>
+<li><a href="9.html">Vyriški žieminiai batai internetu | Sportsman.lt</a><br> Apžiūrėk visą žieminiai batai &amp; kedai kolekciją grąžinimui arba keitimui turėsi netgi 30 dienų Tik originalūs geriausių prekinių ženklų produktai e. parduotuvėje ★ Sizeer.lt ★</li>
+</ul></p>
+	</div>
+	<div id="three-column" class="container">
+							<center><img src="" width="50%"></center><br><br><img style="width:80%" src="img/93b004094f660b805f54aa7eab2ac0f2.jpg"><br /><img style="width:80%" src="img/cf0532246279df7192c2770672c3c965.jpg"><br /><img style="width:80%" src="img/19684799e71cfc134dc1cd89a1863869.jpg"><br /><img style="width:80%" src="img/cec3463ed91cdbbe00cb567db04c107b.jpg"><br /><img style="width:80%" src="img/66018cdcaae941fc2c033c3134d62653.jpg"><br /><img style="width:80%" src="img/91373b5d7fd6b062ddd4cd031253a401.jpg"><br /><img style="width:80%" src="img/0c8a6972ce063c85e40a5333d508bbdd.jpg"><br /><img style="width:80%" src="img/18aeeba0684a9c461914be7fa2abbcd0.jpg"><br /><img style="width:80%" src="img/3b6349b52891ac0810e2b98dfa17fc33.jpg"><br /><img style="width:80%" src="img/66018cdcaae941fc2c033c3134d62653.jpg"><br /><img style="width:80%" src="img/93b004094f660b805f54aa7eab2ac0f2.jpg"><br /><img style="width:80%" src="img/3b6349b52891ac0810e2b98dfa17fc33.jpg"><br /><img style="width:80%" src="img/3b6349b52891ac0810e2b98dfa17fc33.jpg"><br /><img style="width:80%" src="img/7b0ec649ef1a51c7344faacd9f680903.jpg"><br /><img style="width:80%" src="img/91373b5d7fd6b062ddd4cd031253a401.jpg"><br /><img style="width:80%" src="img/058990dc4045fd54e16f51de89342692.jpg"><br /><img style="width:80%" src="img/66138b4944dc37e9822edbec8f40e5ea.jpg"><br /><img style="width:80%" src="img/dda2db6364fbd5e4a664aebd4643d84b.jpg"><br /><img style="width:80%" src="img/ecde00152a7a6c3a7ad8c35da41119da.jpg"><br /><img style="width:80%" src="img/0c8a6972ce063c85e40a5333d508bbdd.jpg"><br /><img style="width:80%" src="img/06f67266756c131646cc857d74c04261.jpg"><br /><img style="width:80%" src="img/91373b5d7fd6b062ddd4cd031253a401.jpg"><br /><img style="width:80%" src="img/5d87742491198547321708c6f6c52524.jpg"><br /><img style="width:80%" src="img/c1f49cd1bcf627d24a42dd5aeb3ee605.jpg"><br /><img style="width:80%" src="img/91373b5d7fd6b062ddd4cd031253a401.jpg"><br /><img style="width:80%" src="img/66018cdcaae941fc2c033c3134d62653.jpg"><br /><img style="width:80%" src="img/cec3463ed91cdbbe00cb567db04c107b.jpg"><br /><img style="width:80%" src="img/66018cdcaae941fc2c033c3134d62653.jpg"><br /><img style="width:80%" src="img/cf0532246279df7192c2770672c3c965.jpg"><br /><img style="width:80%" src="img/cf69c1837475b8c5ff37025e6693a800.jpg"><br /><img style="width:80%" src="img/66138b4944dc37e9822edbec8f40e5ea.jpg"><br /><img style="width:80%" src="img/19684799e71cfc134dc1cd89a1863869.jpg"><br /><img style="width:80%" src="img/80a0f932edd61785ab258bece717fbf0.jpg"><br /><img style="width:80%" src="img/058990dc4045fd54e16f51de89342692.jpg"><br /><img style="width:80%" src="img/6b7bd941f3a672347d3e103a879edc5b.jpg"><br /><img style="width:80%" src="img/66018cdcaae941fc2c033c3134d62653.jpg"><br /><img style="width:80%" src="img/29d24c7eb9a48596eeedff566792f788.jpg"><br /><img style="width:80%" src="img/29d24c7eb9a48596eeedff566792f788.jpg"><br /><img style="width:80%" src="img/29d24c7eb9a48596eeedff566792f788.jpg"><br /><img style="width:80%" src="img/19684799e71cfc134dc1cd89a1863869.jpg"><br /><img style="width:80%" src="img/527757eb718e52de87a3413f0dba30df.jpg"><br /><img style="width:80%" src="img/66138b4944dc37e9822edbec8f40e5ea.jpg"><br /><img style="width:80%" src="img/c1f49cd1bcf627d24a42dd5aeb3ee605.jpg"><br /><img style="width:80%" src="img/cf0532246279df7192c2770672c3c965.jpg"><br /><img style="width:80%" src="img/527757eb718e52de87a3413f0dba30df.jpg"><br /><img style="width:80%" src="img/0c8a6972ce063c85e40a5333d508bbdd.jpg"><br /><img style="width:80%" src="img/5d87742491198547321708c6f6c52524.jpg"><br /><img style="width:80%" src="img/cf0532246279df7192c2770672c3c965.jpg"><br /><img style="width:80%" src="img/cf0532246279df7192c2770672c3c965.jpg"><br /><img style="width:80%" src="img/cec3463ed91cdbbe00cb567db04c107b.jpg"><br /><img style="width:80%" src="img/19684799e71cfc134dc1cd89a1863869.jpg"><br /><img style="width:80%" src="img/407b703e73bb2b3b43957dbbfe396ae5.jpg"><br /><img style="width:80%" src="img/cf69c1837475b8c5ff37025e6693a800.jpg"><br /><img style="width:80%" src="img/18aeeba0684a9c461914be7fa2abbcd0.jpg"><br /><img style="width:80%" src="img/80a0f932edd61785ab258bece717fbf0.jpg"><br /><img style="width:80%" src="img/06f67266756c131646cc857d74c04261.jpg"><br /><img style="width:80%" src="img/66138b4944dc37e9822edbec8f40e5ea.jpg"><br /><img style="width:80%" src="img/81f7d21798d227dba499ccd7552383f6.jpg"><br /><img style="width:80%" src="img/6b7bd941f3a672347d3e103a879edc5b.jpg"><br /><img style="width:80%" src="img/93b004094f660b805f54aa7eab2ac0f2.jpg"><br>
+							<hr />
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>		<img src="" width="50%"/>
+	<div id="portfolio" class="container">
+		<div class="column1">
+			<div class="box"> <a href="#"><img src="" alt="" class="image image-full"  id="WbuMgzC2aK"/></a>
+				<h3>Vestibulum venenatis</h3>
+				<p>Fermentum nibh augue praesent a lacus at urna congue rutrum.</p>
+				<a href="#" class="button button-small">Etiam posuere</a> </div>
+		</div>
+		<div class="column2" id="RzhiA5UW4eCbACq">
+			<div class="box"> <a href="#"><img src="" alt="" class="image image-full"  id="IAbCZNc7x"/></a>
+				<h3>Praesent scelerisque</h3>
+				<p>Vivamus fermentum nibh in augue praesent urna congue rutrum.</p>
+				<a href="#" class="button button-small">Etiam posuere</a> </div>
+		</div>
+		<div class="column3">
+			<div class="box"> <a href="#"><img src="" alt="" class="image image-full"  id="75gllcD"/></a>
+				<h3>Donec dictum metus</h3>
+				<p>Vivamus fermentum nibh in augue praesent urna congue rutrum.</p>
+				<a href="#" class="button button-small">Etiam posuere</a> </div>
+		</div>
+		<div class="column4">
+			<div class="box"> <a href="#"><img src="" alt="" class="image image-full"  id="ifDSHyO"/></a>
+				<h3>Mauris vulputate dolor</h3>
+				<p>Rutrum fermentum nibh in augue praesent urna congue rutrum.</p>
+				<a href="#" class="button button-small">Etiam posuere</a> </div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div class="container" id="F2gamKV6vNP3">
+		<div class="fbox1" id="5Q414JWcO">
+		<span class="icon icon-map-marker"></span>
+			<span>1234 Fictional Road Suite #789
+			<br />Nashville TN 00000</span>
+		</div>
+		<div class="fbox1">
+			<span class="icon icon-phone"></span>
+			<span>
+				Telephone: +1 800 123 4657 
+			</span>
+		</div>
+		<div class="fbox1" id="bTMuDWU3wtA">
+			<span class="icon icon-envelope"></span>
+			<span id="6H3mp2lrPRowS">info@aaaamail.com</span>
+		</div>
+	</div>
+</div>
+<div id="copyright">
+	<p>&copy; Untitled. All rights reserved. | Photos by Fotogrph | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+	<ul class="contact" id="lbs41boxdkHfiZ">
+		<li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
+		<li><a href="#" class="icon icon-facebook"><span></span></a></li>
+		<li><a href="#" class="icon icon-dribbble"><span>Pinterest</span></a></li>
+		<li><a href="#" class="icon icon-tumblr"><span>Google+</span></a></li>
+		<li><a href="#" class="icon icon-rss"><span>Pinterest</span></a></li>
+	</ul>
+</div>
+<p id="CcYPcYTMHct2l"></p>
+</body>
+</html>
